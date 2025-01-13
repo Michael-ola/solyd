@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 const Section1 = () => {
   return (
-    <section className="bg-[#0A0A0A] text-[#E5E5E5] px-6 py-10 flex flex-col md:flex-row md:gap-8 md:px-[5%] md:pt-[10%] md:pb-[2%] h-auto md:h-[100vh]">
+    <section className="bg-[#0A0A0A] text-[#E5E5E5] px-6 pb-10 pt-[22%] flex flex-col md:flex-row md:gap-8 md:px-[5%] md:pt-[10%] md:pb-[2%] h-auto md:h-[100vh]">
       {/* Left Section */}
       <div className="flex flex-col w-full md:w-[34%] justify-center items-center md:items-start text-center md:text-left">
         <p className="text-[1.25rem] md:text-[1.5rem]">About Solyd</p>
