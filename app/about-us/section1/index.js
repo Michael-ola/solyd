@@ -13,7 +13,7 @@ const Section1 = () => {
           is to provide innovative, reliable, and tailored security solutions
           that help clients protect their people, assets, and communities.
         </p>
-        <button className="flex justify-center items-center hover:border-[0.2px] border-white gap-[8px] mt-6 md:mt-12 w-[160px] md:w-[194px] h-[50px] md:h-[60px] bg-[#5E5E5E] text-white text-[0.875rem] md:text-[1rem] hover:bg-black px-4 md:px-6 py-2 md:py-3 rounded-[12px] font-[600] leading-[1.25rem]">
+        <button className="flex justify-center items-center hover:border-[0.2px] border-white gap-[8px] mt-6 md:mt-12 w-[160px] md:w-[194px] h-[50px] md:h-[60px] bg-[#CE2232] text-white text-[0.875rem] md:text-[1rem] hover:bg-black px-4 md:px-6 py-2 md:py-3 rounded-[12px] font-[600] leading-[1.25rem]">
           Contact Us
         </button>
       </div>

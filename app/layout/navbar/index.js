@@ -24,13 +24,15 @@ const Dropdown = ({
 }) => {
   return (
     <div
-      className={`relative py-2 h-full ${isMobile ? "w-full" : ""}`}
+      className={`relative py-2 md:hover:bg-red-500 md:rounded-md md:transition md:hover:text-white h-full ${
+        isMobile ? "w-full" : ""
+      }`}
       onMouseEnter={!isMobile ? onHover : undefined}
       onMouseLeave={!isMobile ? onHover : undefined}
     >
       <button
         className={`flex items-center h-full justify-between w-full ${
-          isMobile ? "px-4 py-2 text-left bg-gray-100" : "hover:text-red-500"
+          isMobile ? "px-4 py-2 text-left bg-gray-100" : "hover:text-white px-4"
         }`}
         onClick={isMobile ? toggleDropdown : undefined}
       >
@@ -42,17 +44,19 @@ const Dropdown = ({
         )}
       </button>
       {isOpen && (
-        <ul
-          className={`${
-            isMobile
-              ? "block bg-gray-200 mt-2 rounded-md"
-              : "absolute left-0 mt-2 w-[220px]"
-          } bg-white text-black rounded-md shadow-lg p-2 z-20`}
-        >
-          {items.map((item, index) => (
-            <MenuItem key={index} href={item.href} label={item.label} />
-          ))}
-        </ul>
+        <div className="md:absolute md:w-full md:h-full md:top-10 md:pt-[10%]">
+          <ul
+            className={`${
+              isMobile
+                ? "block bg-gray-200 mt-2 rounded-md"
+                : "absolute left-0 mt-2 w-[220px]"
+            } bg-white text-black rounded-md shadow-lg p-2 z-20`}
+          >
+            {items.map((item, index) => (
+              <MenuItem key={index} href={item.href} label={item.label} />
+            ))}
+          </ul>
+        </div>
       )}
     </div>
   );
