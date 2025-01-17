@@ -3,7 +3,7 @@ import React from "react";
 const index = ({ image, header, paragraph, className }) => {
   return (
     <div
-      className={`relative bg-left h-64 md:h-[70vh] bg-no-repeat text-white flex items-center justify-center ${className}`}
+      className={`relative bg-left h-80 md:h-[70vh] bg-no-repeat text-white flex items-center justify-center ${className}`}
       style={{
         backgroundImage: `url(${image})`,
         backgroundSize: "100% 100%",

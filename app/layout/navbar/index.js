@@ -1,6 +1,5 @@
 "use client";
 import React, { useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
 
 const MenuItem = ({ href, label }) => (
@@ -102,7 +101,7 @@ const Navbar = () => {
       <div className="flex items-center">
         <img
           src="/images/logo.png"
-          className="w-[48px] h-[16px] md:w-[113px] md:h-[38px]"
+          className="w-[100px] h-[36px] md:w-[113px] md:h-[38px]"
           alt="Logo"
         />
       </div>
@@ -129,7 +128,7 @@ const Navbar = () => {
 
       {/* Mobile Menu Toggle */}
       <button
-        className="md:hidden text-white"
+        className="md:hidden text-white text-3xl"
         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
       >
         {isMobileMenuOpen ? "✖" : "☰"}
