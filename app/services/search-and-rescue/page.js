@@ -11,14 +11,14 @@ const Page = () => {
         paragraph=""
       />
 
-      <section className="py-[5%] px-[5%] bg-white">
+      <section className="pt-[7%] md:py-[5%] px-[5%] bg-white">
         {/* Unlocking Precision Section */}
 
         <div className="text-left mb-[8%] md:mb-[5%]">
           <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold font-axiforma text-[#1a1a1a] md:text-[2.5rem]">
             Efficient Search and Rescue with Drones
           </h1>
-          <p className="mt-2 text-sm sm:text-base lg:text-lg text-[#000] md:text-[1.5rem] leading-relaxed md:leading-[2.5rem] md:w-[85%]">
+          <p className="mt-2 text-[#000] md:text-[1.2rem] leading-relaxed md:leading-[2.5rem] md:w-[85%]">
             Our drones are equipped with advanced search and rescue
             capabilities, including thermal imaging and night vision technology.
             This allows us to locate missing persons or survivors in various

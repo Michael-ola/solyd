@@ -5,14 +5,14 @@ import ImageHero from "@components/image-hero";
 const page = () => {
   const SafetyGearSection = () => {
     return (
-      <section className="pb-[5%] pt-[8%] md:pt-[5%] px-[5%] bg-white">
+      <section className="pb-[5%] pt-[7%] md:pt-[5%] px-[5%] bg-white">
         <div className="grid grid-cols-1 gap-3 md:gap-12 items-center">
           {/* Text Content */}
           <div>
             <h2 className="text-2xl lg:text-3xl font-axiforma text-[#1a1a1a] font-bold md:text-[2.5rem] mb-4">
               Safety and Performance Gear
             </h2>
-            <p className="text-[#212121] mb-6 md:text-[1.5rem] md:w-[80%]">
+            <p className="text-[#212121] mb-6 md:text-[1.2rem] md:w-[80%]">
               Our range of tactical gear is designed to meet the demanding
               requirements of law enforcement and security professionals. From
               body armor to tactical vests and helmets, we offer a comprehensive

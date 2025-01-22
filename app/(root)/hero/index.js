@@ -1,11 +1,12 @@
 import React from "react";
 import Image from "next/image";
 import Illustration from "@public/images/scroll-down.svg";
+import Link from "next/link";
 
 const HeroSection = () => {
   return (
     <div className="relative bg-hero-gradient text-white">
-      <header className="relative flex flex-col items-center justify-center h-screen bg-black">
+      <header className="relative flex flex-col items-center justify-center h-[85vh] md:h-screen bg-black">
         {/* Background Image */}
         <div
           className="absolute inset-0 bg-cover bg-center backdrop-blur-[3px] opacity-65"
@@ -22,10 +23,12 @@ const HeroSection = () => {
             Has been a leading supplier of top-tier physical and electronic
             security and counterterrorism equipment for over three decades.
           </p>
-          <button className="flex justify-center items-center hover:border-[0.2px] border-white gap-[8px] mt-12 w-[194px] h-[60px] bg-[#5E5E5E] text-white text-[1rem] hover:bg-black px-6 py-3 rounded-[12px] font-[600] leading-[1.25rem]">
-            <p className="block">Learn More</p>
-            <span className="block w-2 h-2 -mb-[2px] border-b-2 border-r-2 -rotate-45 border-white"></span>
-          </button>
+          <Link href="/about-us">
+            <button className="flex justify-center items-center hover:border-[0.2px] border-white gap-[8px] mt-12 w-[194px] h-[60px] bg-[#5E5E5E] text-white text-[1rem] hover:bg-black px-6 py-3 rounded-[12px] font-[600] leading-[1.25rem]">
+              <p className="block">Learn More</p>
+              <span className="block w-2 h-2 -mb-[2px] border-b-2 border-r-2 -rotate-45 border-white"></span>
+            </button>
+          </Link>
         </div>
         {/* Scroll Down Indicator */}
         <div className="absolute bottom-3 text-center ml-2">

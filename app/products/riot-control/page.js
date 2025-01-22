@@ -45,14 +45,14 @@ const page = () => {
     ];
 
     return (
-      <section className="pb-[5%] pt-[8%] md:pt-[5%] px-[5%] bg-white">
+      <section className="pb-[5%] pt-[7%] md:pt-[5%] px-[5%] bg-white">
         <div className="grid grid-cols-1 gap-3 md:gap-12 items-center md:mb-[5%]">
           {/* Text Content */}
           <div>
             <h2 className="text-2xl lg:text-3xl font-axiforma text-[#1a1a1a] font-bold md:text-[2.5rem] mb-4 md:w-[50%] md:leading-[4.125rem]">
               Reliable Equipment for Effective Riot Management
             </h2>
-            <p className="text-[#212121] text-justify mb-6 md:text-[1.5rem] md:w-[84%]">
+            <p className="text-[#212121] text-justify mb-6 md:text-[1.2rem] md:w-[84%]">
               Our riot control products are designed to help law enforcement
               maintain order in challenging situations. From riot shields to
               tear gas, we offer a range of products to help control crowds and

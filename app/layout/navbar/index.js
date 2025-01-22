@@ -99,11 +99,13 @@ const Navbar = () => {
     <nav className="flex justify-between items-center px-8 py-2 md:py-4 bg-[#FFFFFF33] backdrop-blur-lg border rounded-[12px] border-[#FFFFFF4D] text-white w-[90%] mx-auto left-0 right-0 top-[2%] md:top-[30px] fixed z-20">
       {/* Logo */}
       <div className="flex items-center">
-        <img
-          src="/images/logo.png"
-          className="w-[100px] h-[36px] md:w-[113px] md:h-[38px]"
-          alt="Logo"
-        />
+        <Link href="/">
+          <img
+            src="/images/logo.png"
+            className="w-[100px] h-[36px] md:w-[113px] md:h-[38px]"
+            alt="Logo"
+          />
+        </Link>
       </div>
 
       {/* Desktop Menu */}
@@ -128,10 +130,22 @@ const Navbar = () => {
 
       {/* Mobile Menu Toggle */}
       <button
-        className="md:hidden text-white text-3xl"
+        className="md:hidden text-white "
         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
       >
-        {isMobileMenuOpen ? "✖" : "☰"}
+        {isMobileMenuOpen ? (
+          <img
+            src="/images/close.png"
+            className="w-[22px] h-[22px]"
+            alt="Close"
+          />
+        ) : (
+          <img
+            src="/images/open.png"
+            className="w-[22px] h-[22px]"
+            alt="Open"
+          />
+        )}
       </button>
 
       {/* Mobile Menu */}
@@ -154,17 +168,21 @@ const Navbar = () => {
             toggleDropdown={() => toggleDropdown("services")}
           />
           <li>
-            <button className="bg-[#CE2232] hover:bg-red-700 text-white px-4 py-2 rounded-[12px] w-full">
-              Contact Us
-            </button>
+            <Link href="/contact-us">
+              <button className="bg-[#CE2232] hover:bg-red-700 text-white px-4 py-2 rounded-[12px] w-full">
+                Contact Us
+              </button>
+            </Link>
           </li>
         </ul>
       )}
 
       {/* Contact Us Button */}
-      <button className="hidden md:block bg-[#CE2232] hover:bg-red-700 text-white px-4 py-2 rounded-[12px]">
-        Contact Us
-      </button>
+      <Link href="/contact-us" className="hidden md:block">
+        <button className="hidden md:block bg-[#CE2232] hover:bg-red-700 text-white px-4 py-2 rounded-[12px]">
+          Contact Us
+        </button>
+      </Link>
     </nav>
   );
 };

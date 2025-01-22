@@ -24,12 +24,10 @@ const page = () => {
         <p className="#212121 md:text-[1.2rem] leading-relaxed">{text}</p>
       </div>
       {/* Image Section */}
-      <div className={`lg:w-1/2 ${imageStyle} overflow-hidden`}>
-        <img
-          src={image}
-          alt={title}
-          className="rounded-[12px] shadow-md w-full h-full block"
-        />
+      <div
+        className={`lg:w-1/2 ${imageStyle} overflow-hidden rounded-[12px] shadow-md `}
+      >
+        <img src={image} alt={title} className="w-full h-full block" />
       </div>
     </div>
   );
@@ -41,7 +39,7 @@ const page = () => {
         paragraph="Smart Security with Reliable CCTV Monitoring"
       />
 
-      <div className="container mx-auto px-4 lg:px-[5%] pt-[5%]">
+      <div className="container flex flex-col mx-auto px-4 lg:px-[5%] md:gap-[15vh] pt-[7%] md:pt-[5%]">
         {/* First Block */}
         <TextImageBlock
           title="Reliable CCTV Solutions for Every Security Need"

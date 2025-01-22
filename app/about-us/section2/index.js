@@ -62,7 +62,7 @@ const AboutSection = () => {
                       {text}
                     </h2>
                   ) : (
-                    <p className="text-lg mb-4 leading-relaxed md:text-[1.25rem] text-[#E5E5E5]">
+                    <p className="text-lg mb-4 leading-relaxed md:text-[1.2rem] text-[#E5E5E5]">
                       {text}
                     </p>
                   )}

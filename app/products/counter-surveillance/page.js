@@ -11,10 +11,10 @@ const page = () => {
     >
       {/* Text Section */}
       <div className="lg:w-1/2 lg:text-left">
-        <h2 className="text-2xl md:text-[2.5rem] font-axiforma font-semibold text-[#1A1A1A] mb-4 md:leading-[3.75rem]">
+        <h2 className="text-2xl md:text-[2.5rem] font-axiforma font-bold text-[#1A1A1A] mb-4 md:leading-[3rem]">
           {title}
         </h2>
-        <p className="text-[#212121] md:text-[1.5rem] leading-relaxed">
+        <p className="text-[#212121] md:text-[1.2rem] leading-relaxed">
           {text}
         </p>
       </div>
@@ -35,7 +35,7 @@ const page = () => {
         header="Counter Surveillance"
         paragraph="Solutions to detect and deter unauthorized monitoring, ensuring your privacy and security."
       />
-      <div className="container mx-auto px-4 lg:px-[5%] pt-16">
+      <div className="container flex flex-col mx-auto px-4 md:gap-[15vh] lg:px-[5%] pt-[7%]  md:pt-[5%]">
         {/* First Block */}
         <TextImageBlock
           title="Wondering Why to Choose Us"

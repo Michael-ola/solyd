@@ -1,6 +1,6 @@
 import React from "react";
 
-const index = ({ image, header, paragraph, className }) => {
+const index = ({ image, header, paragraph, className, children }) => {
   return (
     <div
       className={`relative bg-left h-80 md:h-[70vh] bg-no-repeat text-white flex items-center justify-center ${className}`}
@@ -15,6 +15,7 @@ const index = ({ image, header, paragraph, className }) => {
           {header}
         </h1>
         <p className="text-lg md:text-xl md:w-[60%]">{paragraph}</p>
+        {children}
       </div>
     </div>
   );

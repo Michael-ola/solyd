@@ -25,14 +25,14 @@ const DroneFeatureSection = () => {
   ];
 
   return (
-    <section className="bg-white py-[5%] px-[5%]">
+    <section className="bg-white flex flex-col md:gap-[7vh] pt-[7%]  md:py-[5%] px-[5%]">
       {/* Top Section */}
       <div className="container mx-auto">
         <div className="">
-          <h2 className="text-3xl font-bold mb-4 text-[#1a1a1a] md:text-[2.5rem] md:text-left font-axiforma">
+          <h2 className="text-2xl font-bold mb-4 text-[#1a1a1a] md:text-[2.5rem] md:text-left font-axiforma">
             Innovative Drones for Critical Missions
           </h2>
-          <p className="text-[#212121] md:text-[1.5rem] mb-8 md:text-left md:w-[75%]">
+          <p className="text-[#212121] md:text-[1.2rem] mb-8 md:text-left md:w-[75%]">
             Our drones are equipped with the latest technology to provide
             advanced surveillance and reconnaissance capabilities. Whether for
             security, search and rescue, or emergency management, our drones
@@ -62,10 +62,10 @@ const DroneFeatureSection = () => {
 
           {/* Right Side */}
           <div>
-            <h3 className="text-3xl md:text-[2.5rem] font-axiforma font-bold mb-4 text-[#1a1a1a]">
+            <h3 className="text-2xl md:text-[2.5rem] font-axiforma font-bold mb-4 text-[#1a1a1a]">
               SOLYD Drone Key Features
             </h3>
-            <p className="text-[#212121] text-justify md:text-[1.5rem]">
+            <p className="text-[#212121] text-justify md:text-[1.2rem]">
               Drones are revolutionizing the way businesses and individuals
               approach tasks like surveillance, mapping, delivery, and more. Our
               cutting-edge drones are designed to meet the demands of various

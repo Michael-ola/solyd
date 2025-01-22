@@ -59,7 +59,7 @@ const OurValues = () => {
         <h2 className="text-2xl font-bold font-axiforma text-[#1A1A1A] md:text-[2.5rem]">
           Our Values
         </h2>
-        <p className="mt-4 text-[#212121] text-sm md:text-[1.5rem] md:w-[80%] md:leading-[2.5rem]">
+        <p className="mt-4 text-[#212121] text-lg md:text-[1.2rem] md:w-[80%] md:leading-[2rem]">
           Our core values guide every decision and interaction, ensuring that we
           stay true to our commitment to excellence.
         </p>

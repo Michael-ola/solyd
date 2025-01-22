@@ -7,28 +7,28 @@ const Section = ({ title, content, image, reverse = false, icon }) => {
     <div
       className={`flex flex-col ${
         reverse ? "md:flex-row-reverse" : "md:flex-row"
-      } items-center gap-8 md:gap-12 py-4`}
+      } items-center gap-8 md:gap-12`}
     >
       {/* Text Content */}
       <div className="flex-1 space-y-4">
         {icon && (
-          <div className="text-3xl flex items-center gap-2">
+          <div className="text-3xl flex items-center gap-4">
             <img
               src={icon}
               alt="icon"
               className="w-[35px] h-[40px] self-start mt-2"
             />
-            <h2 className="text-lg text-[#1A1A1A] font-bold font-axiforma md:text-[2rem] md:leading-[3rem]">
+            <h2 className="text-2xl text-[#1A1A1A] font-bold font-axiforma md:text-[2rem] md:leading-[3rem]">
               {title}
             </h2>
           </div>
         )}
         {!icon && (
-          <h2 className="text-lg text-[#1A1A1A] font-bold font-axiforma md:text-[2rem] md:leading-[3rem]">
+          <h2 className="text-2xl text-[#1A1A1A] font-bold font-axiforma md:text-[2.3rem] md:leading-[3rem]">
             {title}
           </h2>
         )}
-        <p className="text-[#212121] md:text-[1.3rem]">{content}</p>
+        <p className="text-[#212121] md:text-[1.2rem]">{content}</p>
       </div>
 
       {/* Image */}
@@ -53,7 +53,7 @@ const ArmoredVehicles = () => {
         paragraph="Unparalleled Protection In High-Risk Environments"
       />
       {/* Why Choose Section */}
-      <div className="container md:flex md:flex-col md:gap-[5vh] mx-auto px-4 pt-[5%] md:px-[5%]">
+      <div className="container pt-[7%] flex flex-col gap-10 md:gap-[15vh] mx-auto px-4 md:py-[5%] md:px-[5%]">
         <Section
           title="Why Choose Our Armored Vehicles?"
           content="Solyd Nigeria provides a range of armored vehicles designed to protect personnel and assets in high-risk environments. Our vehicles are built to the highest standards of safety and durability, ensuring maximum protection in dangerous situations."

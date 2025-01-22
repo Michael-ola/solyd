@@ -92,14 +92,14 @@ const Page = () => {
         paragraph=""
       />
 
-      <section className="py-[5%] px-[5%] bg-white">
+      <section className="pt-[7%] md:py-[5%] px-[5%] bg-white">
         {/* Unlocking Precision Section */}
 
         <div className="text-left mb-[8%] md:mb-[5%]">
-          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold font-axiforma text-[#1a1a1a] md:text-[2.5rem]">
+          <h1 className="text-2xl font-bold font-axiforma text-[#1a1a1a] md:text-[2.5rem]">
             Unlocking Precision with Lidar Technology
           </h1>
-          <p className="mt-2 text-sm sm:text-base lg:text-lg text-[#212121] md:text-[1.5rem] leading-relaxed">
+          <p className="mt-2 text-[#212121] md:text-[1.2rem]  leading-relaxed">
             We offer Lidar services using our state-of-the-art drones equipped
             with Lidar technology. Lidar enables us to create detailed 3D maps
             and accurately measure distances, making it ideal for applications
@@ -129,10 +129,10 @@ const Page = () => {
 
         {/* How It Works Section */}
         <div className="mt-16">
-          <h3 className="text-2xl mb-8 font-bold font-axiforma text-[#1a1a1a] md:text-[2.5rem]">
+          <h3 className="text-2xl mb-2 md:mb-8 font-bold font-axiforma text-[#1a1a1a] md:text-[2.5rem]">
             How it works
           </h3>
-          <p className=" text-[#212121] text-[1.5rem] mb-8">
+          <p className=" text-[#212121] text-lg md:text-[1.2rem] mb-8">
             Explore how Lidar transforms laser pulses into actionable insights.
           </p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
