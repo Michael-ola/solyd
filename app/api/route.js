@@ -3,7 +3,7 @@ import nodemailer from "nodemailer";
 export async function POST(req, res) {
   try {
     const body = await req.json();
-    console.log(body);
+    //console.log(body);
     // Destructure data from the request body
     const { firstName, lastName, email, phone, message } = body;
 
