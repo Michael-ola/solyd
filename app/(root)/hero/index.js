@@ -24,7 +24,7 @@ const HeroSection = () => {
             security and counterterrorism equipment for over three decades.
           </p>
           <Link href="/about-us">
-            <button className="flex justify-center items-center hover:border-[0.2px] border-white gap-[8px] mt-12 w-[194px] h-[60px] bg-[#5E5E5E] text-white text-[1rem] hover:bg-black px-6 py-3 rounded-[12px] font-[600] leading-[1.25rem]">
+            <button className="flex justify-center items-center hover:border-[0.2px] border-white gap-[8px] mt-12 w-[194px] h-[60px] bg-red-600 hover:bg-red-700 text-white text-[1rem] px-6 py-3 rounded-[12px] font-[600] leading-[1.25rem]">
               <p className="block">Learn More</p>
               <span className="block w-2 h-2 -mb-[2px] border-b-2 border-r-2 -rotate-45 border-white"></span>
             </button>

@@ -17,12 +17,17 @@ export default {
                            linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1))`,
       },
       animation: {
-        updown: "updown 2s ease-in-out infinite", // Define custom animation
+        updown: "updown 2s ease-in-out infinite", // Define custom animation,
+        marquee: "marquee 10s linear infinite",
       },
       keyframes: {
         updown: {
           "0%, 100%": { transform: "translateY(0)" }, // Initial and end positions
           "50%": { transform: "translateY(-20px)" }, // Middle position (move up)
+        },
+        marquee: {
+          "0%": { transform: "translateX(100%)" },
+          "100%": { transform: "translateX(-100%)" },
         },
       },
     },

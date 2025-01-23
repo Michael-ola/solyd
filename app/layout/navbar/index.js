@@ -96,7 +96,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="flex justify-between items-center px-8 py-2 md:py-4 bg-[#FFFFFF33] backdrop-blur-lg border rounded-[12px] border-[#FFFFFF4D] text-white w-[90%] mx-auto left-0 right-0 top-[2%] md:top-[30px] fixed z-20">
+    <nav className="flex justify-between items-center px-8 py-2 md:py-4 bg-[#FFFFFF33] backdrop-blur-lg border rounded-[12px] border-[#FFFFFF4D] text-white w-[90%] mx-auto left-0 right-0 top-[2%] md:top-[30px] fixed z-50">
       {/* Logo */}
       <div className="flex items-center">
         <Link href="/">
@@ -126,6 +126,7 @@ const Navbar = () => {
           toggleDropdown={() => toggleDropdown("services")}
           onHover={() => toggleDropdown("services")}
         />
+        <MenuItem href="/CSR" label="CSR" />
       </ul>
 
       {/* Mobile Menu Toggle */}
@@ -167,6 +168,7 @@ const Navbar = () => {
             isOpen={openDropdown === "services"}
             toggleDropdown={() => toggleDropdown("services")}
           />
+          <MenuItem href="/CSR" label="CSR" />
           <li>
             <Link href="/contact-us">
               <button className="bg-[#CE2232] hover:bg-red-700 text-white px-4 py-2 rounded-[12px] w-full">
