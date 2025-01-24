@@ -148,7 +148,7 @@ const ContactForm = () => {
             <label className="block text-sm font-medium mb-1">
               Phone <span className="text-red-500">*</span>
             </label>
-            <div className="w-full border border-[#C4C4C4] overflow-hidden rounded-[0.375rem] ">
+            <div className="w-full border border-[#C4C4C4] rounded-[0.375rem] ">
               <PhoneInput
                 country={"ng"}
                 enableSearch
