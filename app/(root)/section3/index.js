@@ -52,7 +52,7 @@ const LogosCarousel = ({ logos }) => {
             key={currentIndex}
             src={logos[currentIndex].src}
             alt={logos[currentIndex].alt}
-            className="h-16 md:h-24 object-contain"
+            className="h-24 md:h-32 object-contain"
             initial={{ opacity: 0, x: direction === 1 ? 100 : -100 }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: direction === 1 ? -100 : 100 }}
@@ -123,7 +123,7 @@ const StrategicPartners = () => {
       </div>
 
       {/* Subtext Section */}
-      <div className="text-center mb-6">
+      <div className="text-center mb-3">
         <p className="text-purple-500 text-lg md:text-xl text-transparent bg-clip-text bg-gradient-to-r from-[#0E1FDB] to-[#BE187C]">
           Alliances that drive innovation and deliver results
         </p>
@@ -133,7 +133,7 @@ const StrategicPartners = () => {
       </div>
 
       {/* Logos Section */}
-      <div className="p-4">
+      <div className="p-4 pt-0">
         <LogosCarousel logos={logos} />
       </div>
     </section>
