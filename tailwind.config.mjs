@@ -19,6 +19,7 @@ export default {
       animation: {
         updown: "updown 2s ease-in-out infinite", // Define custom animation,
         marquee: "marquee 10s linear infinite",
+        "rotate-infinite": "rotate 12s linear infinite",
       },
       keyframes: {
         updown: {
@@ -28,6 +29,10 @@ export default {
         marquee: {
           "0%": { transform: "translateX(100%)" },
           "100%": { transform: "translateX(-100%)" },
+        },
+        rotate: {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" },
         },
       },
     },

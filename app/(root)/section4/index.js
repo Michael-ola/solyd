@@ -20,11 +20,11 @@ const CustomersSection = () => {
       </div>
 
       {/* Logo Image */}
-      <div className="absolute mt-20 md:mt-28 inset-0 flex items-center justify-center">
+      <div className="absolute mt-20 md:mt-28 inset-0 flex items-center justify-center overflow-hidden">
         <img
           src="/images/section4/image2.png"
           alt="Customer Logos"
-          className="w-[90%] md:w-[30%] h-auto"
+          className="w-[90%] md:w-[30%] h-auto animate-rotate-infinite"
         />
       </div>
     </section>
