@@ -7,7 +7,19 @@ const Marquee = ({ className }) => {
       className={`absolute w-[90%] py-2 left-0 right-0 rounded-[8px] bg-black mx-auto ${className}`}
     >
       <div className="whitespace-nowrap overflow-hidden">
-        <div className="animate-marquee flex">
+        <div className="flex animate-marquee">
+          {/* First set of content */}
+          <p className="text-white uppercase text-sm mx-4 flex items-center">
+            Corporate Social Responsibility <span className="mx-2">✳</span>
+          </p>
+          <p className="text-white uppercase text-sm mx-4 flex items-center">
+            Corporate Social Responsibility <span className="mx-2">✳</span>
+          </p>
+          <p className="text-white uppercase text-sm mx-4 flex items-center">
+            Corporate Social Responsibility <span className="mx-2">✳</span>
+          </p>
+
+          {/* Duplicate the content for a seamless loop */}
           <p className="text-white uppercase text-sm mx-4 flex items-center">
             Corporate Social Responsibility <span className="mx-2">✳</span>
           </p>

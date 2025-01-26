@@ -18,7 +18,7 @@ export default {
       },
       animation: {
         updown: "updown 2s ease-in-out infinite", // Define custom animation,
-        marquee: "marquee 10s linear infinite",
+        marquee: "marquee 7s linear infinite",
         "rotate-infinite": "rotate 12s linear infinite",
       },
       keyframes: {
@@ -27,8 +27,8 @@ export default {
           "50%": { transform: "translateY(-20px)" }, // Middle position (move up)
         },
         marquee: {
-          "0%": { transform: "translateX(100%)" },
-          "100%": { transform: "translateX(-100%)" },
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-50%)" }, // Make sure it moves 50% of the content width
         },
         rotate: {
           "0%": { transform: "rotate(0deg)" },
